@@ -7,6 +7,9 @@ let userMessage;
 let userType = "subscriber";
 let userCategory;
 
+let isAunthenticated = true;
+let authenticationStatus = isAunthenticated ? "Authenticated" :"Not aunthenticated";
+
 if (userRole === "admin"){
     accessLevel = "Full access granted"
 }else if (userRole === "manager"){
@@ -48,3 +51,4 @@ switch (userType){
 }
 
 console.log ("User Category:", userCategory);
+console.log("Authentication Status:", authenticationStatus);
